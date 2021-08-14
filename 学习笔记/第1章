@@ -1,0 +1,85 @@
+1.1 软件开发介绍
+    常用的DOS命令:
+        dir:列出当前目录下的文件以及文件夹
+        md: 创建目录
+        rd: 删除目录
+        cd: 进入目录
+        cd/:退出到主目录
+        cd..:退出到上一目录
+        del:删除文件
+        exit:退出命令行
+
+1.2 计算机语言
+    第一代:机器语言 二进制代码
+    第二代:汇编语言 助记符来表示一条指令
+    第三代:高级语言
+        面向过程的语言:C/Pascal
+        面向对象的语言:Java/Python/Scala...
+
+1.3 1.4 Java的发展过程及优点
+    略....
+
+1.5 Java语言环境的搭建
+    什么是JDK和JRE:
+        JDK包含JRE包含JVM
+        开发/运行:JDK
+        运行:JRE
+
+1.6 第一个程序 "Helloworld"
+    文件后缀:*.java
+    //Helloworld.java
+    class Helloworld{
+        public static void main(String[] args){
+            System.out.println("Helloworld");
+        }
+    }
+    总结:
+    1.在一个java源文件中可以声明多个class 但是最多只能用有一个类声明为public 而且要求声明为public的类的类名必须与源文件名相同
+    2.程序的入口是main()方法 格式是固定的
+    3.输出语句:
+            System.out.println():先输出数据,再换行
+            System.out.print():  输出数据,不换行
+    4.每个执行语句都以";"结尾
+    5.编译后会生成一个或多个字节码文件,有几个类就生成几个
+    运行过程
+    >1.Java代码编写到扩展名为.java的文件中(源文件)
+    >2.通过javac命令对该java文件进行编译生成class文件(字节码文件)
+    >3.通过java命令对生成的class文件进行运行
+            命令:
+            编译:javac name.java
+            运行:java name
+
+1.7 HelloWorld程序总结
+    略...
+
+1.8 注释(comment)
+    1.注释类型
+        //单行注释
+        /*多行注释*/
+        //如下的main方法是程序的入口
+        /**文档注释**/
+    2.注释作用
+        (1)增强程序的可读性
+        (2)调试所写的代码
+    3.特点
+        单行注释和多行注释不参与编译
+    4.文档注释的作用:
+        文档注释的内容可以被JDK提供的工具javadoc所解析,生成一套以网页文件形式体现的该程序的说明文档
+        /**my java study**/
+    5.多行注释不可以嵌套使用
+
+1.9 Java API文档
+    API(Application Programming Interface,应用程序编程接口)是Java提供的基本编程接口
+    下载API:
+    http://www.oracle.com/technetwork/java/javase/downloads/index.html
+    程序的字典
+
+1.10 Java语言的特点
+    1.面向对象性:
+        两个要素:类,对象
+        三个特征:封装,继承,多态
+    2.健壮性:
+        >去除了C语言中的指针
+        >自动的垃圾回收机制-->仍会出现内存溢出,内存泄漏
+        >跨平台性:write once, run everywhere --一次编译,到处运行(归功于JVM)
+
